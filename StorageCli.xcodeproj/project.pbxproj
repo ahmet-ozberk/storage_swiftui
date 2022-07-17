@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BFD0287528843C4C0014D56F /* StorageCliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0287428843C4C0014D56F /* StorageCliApp.swift */; };
-		BFD0287728843C4C0014D56F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0287628843C4C0014D56F /* ContentView.swift */; };
 		BFD0287928843C4E0014D56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD0287828843C4E0014D56F /* Assets.xcassets */; };
 		BFD0287C28843C4E0014D56F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD0287B28843C4E0014D56F /* Preview Assets.xcassets */; };
 		BFD0288628843C4E0014D56F /* StorageCliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0288528843C4E0014D56F /* StorageCliTests.swift */; };
 		BFD0289028843C4E0014D56F /* StorageCliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0288F28843C4E0014D56F /* StorageCliUITests.swift */; };
 		BFD0289228843C4E0014D56F /* StorageCliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0289128843C4E0014D56F /* StorageCliUITestsLaunchTests.swift */; };
+		BFD028A128843CB60014D56F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD028A028843CB60014D56F /* SplashView.swift */; };
+		BFD028A3288440C30014D56F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD028A2288440C30014D56F /* LoginView.swift */; };
+		BFD028A528844A320014D56F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD028A428844A320014D56F /* HomeView.swift */; };
+		BFD028A82884508E0014D56F /* KeyboardClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD028A72884508E0014D56F /* KeyboardClose.swift */; };
+		BFD028AA28845E6B0014D56F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD028A928845E6B0014D56F /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		BFD0287128843C4C0014D56F /* StorageCli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorageCli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD0287428843C4C0014D56F /* StorageCliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCliApp.swift; sourceTree = "<group>"; };
-		BFD0287628843C4C0014D56F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFD0287828843C4E0014D56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD0287B28843C4E0014D56F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFD0288128843C4E0014D56F /* StorageCliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorageCliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		BFD0288B28843C4E0014D56F /* StorageCliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorageCliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD0288F28843C4E0014D56F /* StorageCliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCliUITests.swift; sourceTree = "<group>"; };
 		BFD0289128843C4E0014D56F /* StorageCliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFD028A028843CB60014D56F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BFD028A2288440C30014D56F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BFD028A428844A320014D56F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BFD028A72884508E0014D56F /* KeyboardClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardClose.swift; sourceTree = "<group>"; };
+		BFD028A928845E6B0014D56F /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		BFD0287328843C4C0014D56F /* StorageCli */ = {
 			isa = PBXGroup;
 			children = (
+				BFD028A62884507D0014D56F /* Constant */,
+				BFD0289F28843C880014D56F /* Model */,
+				BFD0289E28843C820014D56F /* View */,
 				BFD0287428843C4C0014D56F /* StorageCliApp.swift */,
-				BFD0287628843C4C0014D56F /* ContentView.swift */,
 				BFD0287828843C4E0014D56F /* Assets.xcassets */,
 				BFD0287A28843C4E0014D56F /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				BFD0289128843C4E0014D56F /* StorageCliUITestsLaunchTests.swift */,
 			);
 			path = StorageCliUITests;
+			sourceTree = "<group>";
+		};
+		BFD0289E28843C820014D56F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFD028A028843CB60014D56F /* SplashView.swift */,
+				BFD028A2288440C30014D56F /* LoginView.swift */,
+				BFD028A428844A320014D56F /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD0289F28843C880014D56F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD028A62884507D0014D56F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				BFD028A72884508E0014D56F /* KeyboardClose.swift */,
+				BFD028A928845E6B0014D56F /* Toast.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFD0287728843C4C0014D56F /* ContentView.swift in Sources */,
+				BFD028A3288440C30014D56F /* LoginView.swift in Sources */,
+				BFD028AA28845E6B0014D56F /* Toast.swift in Sources */,
+				BFD028A528844A320014D56F /* HomeView.swift in Sources */,
 				BFD0287528843C4C0014D56F /* StorageCliApp.swift in Sources */,
+				BFD028A128843CB60014D56F /* SplashView.swift in Sources */,
+				BFD028A82884508E0014D56F /* KeyboardClose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
